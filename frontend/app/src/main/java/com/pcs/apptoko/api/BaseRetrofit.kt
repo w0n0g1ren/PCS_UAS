@@ -14,7 +14,7 @@ class BaseRetrofit {
             val client = OkHttpClient.Builder()
                 .addInterceptor(interceptor)
                 .build()
-
+// isi dengan url sendiri
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://pcsuas.000webhostapp.com/api/Api_pcs/")
                 .client(client)
